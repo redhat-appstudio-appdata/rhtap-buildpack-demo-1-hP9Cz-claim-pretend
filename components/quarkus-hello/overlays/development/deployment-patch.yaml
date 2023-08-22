@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: quarkus-hello
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/cmoullia-tenant/rhtap-buildpack-demo-1/quarkus-hello@sha256:5d625fadd2d42709b972e2574e0c3a650a6752309ec9de666b199635c2da495d
+        name: my-java-quarkus
+        resources: {}
+status: {}
